@@ -1,0 +1,92 @@
+{
+  "products": [
+  {
+    "id": 1,
+    "title": "Taigour's Pro Gaming Headset",
+    "colours": ["#fff", "#FF0000", "#00FF00", "#0000FF"],
+    "price": 89.99,
+    "category": "Gaming",
+    "rating": 4.8,
+    "reviews": 124,
+    "image": "attached_assets/store/Gaming Headset.png",
+    "description": "High-quality gaming headset with surround sound and noise-canceling microphone."
+  },
+  {
+    "id": 2,
+    "title": "Championship Logo T-Shirt",
+    "colours": ["#fff", "#00FF00", "#0000FF"],
+    "price": 29.99,
+    "category": "Fashion",
+    "rating": 4.6,
+    "reviews": 87,
+    "image": "attached_assets/store/Championship Logo T-shirt.png",
+    "description": "Comfortable and stylish T-shirt with the championship logo."
+  },
+  {
+    "id": 3,
+    "title": "Gaming Mouse - Pro Edition",
+    "colours": ["#fff", "#FF0000", "#00FF00", "#0000FF"],
+    "price": 59.99,
+    "category": "Gaming",
+    "rating": 4.9,
+    "reviews": 203,
+    "image": "attached_assets/store/Gaming Mouse - Pro Edition.png",
+    "description": "Ergonomic gaming mouse with customizable buttons and RGB lighting."
+  },
+  {
+    "id": 4,
+    "title": "Taigour's E-Sports Hoodie",
+    "colours": ["#fff", "#FF0000", "#00FF00", "#0000FF"],
+    "price": 49.99,
+    "category": "Fashion",
+    "rating": 4.7,
+    "reviews": 156,
+    "image": "attached_assets/store/Hoodie.png",
+    "description": "Warm and comfortable hoodie perfect for e-sports enthusiasts."
+  },
+  {
+    "id": 5,
+    "title": "Wireless Gaming Controller",
+    "colours": ["#fff", "#FF0000", "#00FF00", "#0000FF"],
+    "price": 69.99,
+    "category": "Gaming",
+    "rating": 4,
+    "reviews": 92,
+    "image": "attached_assets/store/Wireless Gaming Controller.png",
+    "description": "Responsive wireless controller with customizable buttons."
+  },
+  {
+    "id": 6,
+    "title": "Limited Edition Gaming Figurine",
+    "colours": ["#fff", "#fff", "#FF0000", "#00FF00"],
+    "price": 119.99,
+    "category": "Decoration",
+    "rating": 4.9,
+    "reviews": 64,
+    "image": "attached_assets/store/Limited Edition Gaming Figurine.png",
+    "description": "Exclusive collectible figurine for gaming fans."
+  },
+  {
+    "id": 7,
+    "title": "Taigour's Music Bluetooth Speaker",
+    "colours": ["#fff", "#FF0000", "#00FF00", "#0000FF"],
+    "price": 79.99,
+    "category": "Accessories",
+    "rating": 4.7,
+    "reviews": 118,
+    "image": "attached_assets/store/Bluetooth Speaker.png",
+    "description": "Portable Bluetooth speaker with high-quality sound."
+  },
+  {
+    "id": 8,
+    "title": "Gaming Mousepad - XL",
+    "colours": ["#fff", "#FF0000", "#00FF00", "#0000FF"],
+    "price": 24.99,
+    "category": "Accessories",
+    "rating": 4.6,
+    "reviews": 87,
+    "image": "attached_assets/store/Gaming Mousepad - XL.png",
+    "description": "Extra-large mousepad with smooth surface for precise control."
+  }
+]
+}

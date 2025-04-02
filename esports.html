@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="attached_assets/esports/logo.png" type="image/x-icon">
+  <title>Taigour's E-Sports - Forge Your Legacy, Rule the Game</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="branch-page esports-theme">
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="attached_assets/esports/logo.png" alt="Taigour's Group Logo">
+      </div>
+      <div class="nav-buttons">
+        <button id="darkModeToggle" class="mode-toggle"><i class="fas fa-moon"></i></button>
+      </div>
+      <nav id="mobileNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="esports.html" class="active">E-Sports</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Store</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="branch-hero esports-hero">
+    <div class="container">
+      <h1>Taigour's E-Sports</h1>
+      <p>Forge Your Legacy, Rule the Game</p>
+    </div>
+  </section>
+
+  <section class="branch-about">
+    <div class="container">
+      <h2>About Our E-Sports Division</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Taigours E-Sports is a powerhouse built for gamers who strive for greatness. Whether you're an aspiring pro or a casual competitor, our platform provides a high-stakes gaming experience where players can test their skills, participate in tournaments, and engage in competitive leagues. We are more than just a gaming brand—we are a community-driven esports ecosystem, designed to elevate gaming talent and bring the thrill of esports to the next level.</p>
+          <p>Our vision is to redefine gaming culture by offering a space where players can connect, compete, and grow. With a commitment to excellence, Taigours E-Sports is here to empower gamers, inspire champions, and create legendary moments in esports history. If you have the passion, we have the platform—it's time to rise and conquer!</p>
+        </div>
+        <div class="about-image">
+          <img src="attached_assets/esports/logo1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tournaments" id="tournaments">
+    <div class="container">
+      <h2>Upcoming Tournaments</h2>
+      <div id="tournaments-container" class="tournament-grid">
+        <!-- Tournament cards will be dynamically loaded here -->
+      </div>
+    </div>
+  </section>
+
+  <section class="leaderboard" id="leaderboard">
+    <div class="container">
+      <h2>Tournament Leaderboards</h2>
+      <div class="tab-container">
+        <div class="tabs">
+          <button class="tab-btn active" data-game="freefire">Free Fire</button>
+          <button class="tab-btn" data-game="pubg">PUBG</button>
+        </div>
+        <div class="tab-content active" id="freefire-leaderboard">
+          <div class="leaderboard-table-container">
+              <table class="leaderboard-table">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th>Kill</th>
+                    <th>Wins</th>
+                    <th>Points</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Free Fire leaderboard data will be dynamically loaded here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="pubg-leaderboard">
+          <div class="leaderboard-table-container">
+            <div class="leaderboard-table-container">
+              <table class="leaderboard-table">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th>Kill</th>
+                    <th>Wins</th>
+                    <th>Points</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- PUBG leaderboard data will be dynamically loaded here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact branch-contact" id="contact">
+    <div class="container">
+      <h2>Join Our Tournaments</h2>
+      <p class="contact-intro">Interested in participating in our tournaments? Fill out the form below and our team will get in touch with you.</p>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>---------</p>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <p><a href="https://wa.me/9864088891" target="_blank">+977 986-4088891</a></p>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-discord"></i>
+            <p>--------</p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="tournamentForm">
+            <input type="text" placeholder="Team Name" required>
+            <input type="text" placeholder="Team Captain" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="WhatsApp Number" required>
+            <select required>
+              <option value="" disabled selected>Select Game</option>
+              <option value="freefire">Free Fire</option>
+              <option value="pubg">PUBG</option>
+            </select>
+            <textarea placeholder="Additional Information" rows="3"></textarea>
+            <div class="terms-checkbox">
+              <input type="checkbox" id="termsCheckbox" required>
+              <label for="termsCheckbox">I agree to the<b><a href="esports-terms-and-conditions.html" target="_blank"> terms and conditions</a> .</b></label>
+            </div>
+            <button type="submit" class="btn">Register Team</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="attached_assets/esports/logo.png" alt="Taigour's e-sports Logo">
+          <p>Forge Your Legacy, Rule the Game</p>
+        </div><br>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Main Site</a></li>
+            <li><a href="#tournaments">Tournaments</a></li>
+            <li><a href="#leaderboard">Leaderboard</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><br>
+        <div class="footer-branches">
+          <h3>Our Companies</h3>
+          <ul>
+            <li><a href="esports.html">Taigour's E-Sports</a></li>
+            <li><a href="#">Taigour's Music</a></li>
+            <li><a href="#">Taigour's Store</a></li>
+          </ul>
+        </div><br>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61572485841102" class="fb" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="insta" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@TaigoursE-Sports" class="YT" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="twitch" target="_blank"><i class="fab fa-twitch"></i></a>
+          </div>
+        </div>
+      </div><br>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Taigour's Group. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="esports.js"></script>
+  <script src="sidebar.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="attached_assets/esports/logo.png" type="image/x-icon">
+  <title>Live Platform - Taigour's E-Sports</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="branch-page esports-theme">
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="esports.html"><img src="attached_assets/esports/logo.png" alt="Taigour's Group Logo"></a>
+      </div>
+      <div class="nav-buttons">
+        <button id="darkModeToggle" class="mode-toggle"><i class="fas fa-moon"></i></button>
+      </div>
+      <nav id="mobileNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="esports.html">E-Sports</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="live.html" class="active">Live</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="branch-hero esports-hero">
+    <div class="container">
+      <h1>Live Platform</h1>
+      <p>Watch live streams of ongoing tournaments and events.</p>
+    </div>
+  </section>
+
+  <!-- Live Streams Section -->
+  <section class="tournaments live-streams">
+    <div class="container">
+      <h2>Ongoing Streams</h2>
+      <div id="live-streams-container" class="tournament-grid">
+        <!-- Live streams will be dynamically loaded here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html"><img src="attached_assets/esports/logo.png" alt="Taigour's Group Logo"></a>
+          <p>Forge Your Legacy, Rule the Game</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="esports.html">E-Sports</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="live.html">Live</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="YT"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="twitch"><i class="fab fa-twitch"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Taigour's Group. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="live.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
