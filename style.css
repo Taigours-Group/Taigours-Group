@@ -2532,6 +2532,10 @@ label[for="termsCheckbox"] a:hover {
 }
 
 .live-stream-card {
+  width: 100%; /* Adjust width to fit the container */
+  max-width: 650px; /* Set a maximum width for better layout */
+  margin: 0 auto; /* Center the card */
+  padding: 15px; /* Add padding for better spacing */
   background-color: var(--card-bg);
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -2540,16 +2544,16 @@ label[for="termsCheckbox"] a:hover {
 }
 
 .live-stream-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px); /* Slightly reduce hover lift */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhance hover shadow */
 }
 
-.live-stream-card iframe {
+.live-stream-image {
   width: 100%;
-  height: 200px;
+  height: 300px;
   border: none;
+  border-radius: 10px;
 }
-
 .stream-details {
   padding: 15px;
   text-align: center;
@@ -2611,6 +2615,12 @@ label[for="termsCheckbox"] a:hover {
     font-size: 0.8rem;
     padding: 8px 15px;
   }
+
+.live-stream-card {
+    width: 100%; /* Ensure full width on small screens */
+    max-width: none; /* Remove max-width constraint */
+  }
+  
 }
 
 /* Product Detail Styles */
