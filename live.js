@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         streamCard.className = 'live-stream-card';
         streamCard.innerHTML = `
           ${selectedTournament.youtube ? `
-              <iframe width="560" height="315" src="${selectedTournament.youtube.replace('watch?v=', 'embed/')}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <img src="${selectedTournament.image}"  class="live-stream-image">
           ` : ''}
           <div class="stream-details">
             <h3>${selectedTournament.title}</h3>
