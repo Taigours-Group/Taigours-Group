@@ -65,105 +65,127 @@ if (companyCards.length > 0) {
   });
 }
 
-// Dark Mode Toggle
-const darkModeToggle = document.getElementById('darkModeToggle');
-if (darkModeToggle) {
-  darkModeToggle.addEventListener('click', () => {
-    const htmlElement = document.documentElement;
-    const currentTheme = htmlElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    htmlElement.setAttribute('data-theme', newTheme);
+// Dark Mode Functionality
+function initializeDarkMode() {
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  if (darkModeToggle) {
+    darkModeToggle.addEventListener('click', () => {
+      const htmlElement = document.documentElement;
+      const currentTheme = htmlElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      htmlElement.setAttribute('data-theme', newTheme);
 
-    // Update the icon
-    const icon = darkModeToggle.querySelector('i');
-    if (newTheme === 'dark') {
-      icon.classList.remove('fa-moon');
-      icon.classList.add('fa-sun');
-    } else {
-      icon.classList.remove('fa-sun');
-      icon.classList.add('fa-moon');
-    }
+      // Update the icon
+      const icon = darkModeToggle.querySelector('i');
+      if (newTheme === 'dark') {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
 
-    // Optionally, save the theme preference in localStorage
-    localStorage.setItem('theme', newTheme);
-  });
+      // Save the theme preference in localStorage
+      localStorage.setItem('theme', newTheme);
+    });
 
-  // Initialize theme on page load
-  document.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    document.documentElement.setAttribute('data-theme', savedTheme);
+    // Initialize theme on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
 
-    // Set the correct icon
-    const icon = darkModeToggle.querySelector('i');
-    if (savedTheme === 'dark') {
-      icon.classList.remove('fa-moon');
-      icon.classList.add('fa-sun');
-    } else {
-      icon.classList.remove('fa-sun');
-      icon.classList.add('fa-moon');
-    }
-  });
+      // Set the correct icon
+      const icon = darkModeToggle.querySelector('i');
+      if (savedTheme === 'dark') {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
+    });
+  }
 }
 
-// Mobile Navigation Toggle
-const mobileNav = document.getElementById('mobileNav');
-const navButtons = document.querySelector('.nav-buttons');
+// Menu Navigation Functionality
+function initializeMenuNavigation() {
+  const mobileNav = document.getElementById('mobileNav');
+  const menuToggle = document.getElementById('menuToggle');
+  const nav = document.querySelector('nav');
+  const menuToggleResponsive = document.createElement('button');
+  menuToggleResponsive.classList.add('menu-toggle');
+  menuToggleResponsive.innerHTML = '<i class="fas fa-bars"></i>';
+  nav.parentNode.insertBefore(menuToggleResponsive, nav);
 
-navButtons.addEventListener('click', () => {
-  mobileNav.classList.toggle('open');
-});
+  if (menuToggle && mobileNav) {
+    menuToggle.addEventListener('click', function() {
+      mobileNav.classList.toggle('active');
 
-// Mobile Menu Toggle
-const menuToggle = document.getElementById('menuToggle');
-if (menuToggle && mobileNav) {
-  menuToggle.addEventListener('click', function() {
-    mobileNav.classList.toggle('active');
-
-    // Change icon based on menu state
-    if (mobileNav.classList.contains('active')) {
-      menuToggle.innerHTML = '<i class="fas fa-times"></i>';
-    } else {
-      menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-    }
-  });
-
-  // Close mobile menu when clicking on a link
-  const navLinks = mobileNav.querySelectorAll('a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      if (window.innerWidth <= 768) {
-        mobileNav.classList.remove('active');
+      // Change icon based on menu state
+      if (mobileNav.classList.contains('active')) {
+        menuToggle.innerHTML = '<i class="fas fa-times"></i>';
+      } else {
         menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
       }
     });
-  });
-}
 
-// Check screen size on resize and adjust navigation
-window.addEventListener('resize', function() {
-  if (window.innerWidth > 768) {
-    // On desktop
+    // Close mobile menu when clicking on a link
+    const navLinks = mobileNav.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          mobileNav.classList.remove('active');
+          menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+      });
+    });
+  }
+
+  // Responsive Navigation
+  menuToggleResponsive.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    menuToggleResponsive.innerHTML = nav.classList.contains('active')
+      ? '<i class="fas fa-times"></i>'
+      : '<i class="fas fa-bars"></i>';
+  });
+
+  // Close menu on link click (for mobile)
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 768) {
+        nav.classList.remove('active');
+        menuToggleResponsive.innerHTML = '<i class="fas fa-bars"></i>';
+      }
+    });
+  });
+
+  // Adjust menu on window resize
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      nav.classList.remove('active');
+      menuToggleResponsive.innerHTML = '<i class="fas fa-bars"></i>';
+    }
     if (mobileNav) {
       mobileNav.classList.remove('active');
     }
     if (menuToggle) {
       menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
     }
-  }
-});
+  });
 
-// Close mobile menu when clicking outside
-document.addEventListener('click', function(e) {
-  if (mobileNav && menuToggle && window.innerWidth <= 768) {
-    const isClickInsideNav = mobileNav.contains(e.target);
-    const isClickOnToggle = menuToggle.contains(e.target);
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', function(e) {
+    if (mobileNav && menuToggle && window.innerWidth <= 768) {
+      const isClickInsideNav = mobileNav.contains(e.target);
+      const isClickOnToggle = menuToggle.contains(e.target);
 
-    if (!isClickInsideNav && !isClickOnToggle && mobileNav.classList.contains('active')) {
-      mobileNav.classList.remove('active');
-      menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+      if (!isClickInsideNav && !isClickOnToggle && mobileNav.classList.contains('active')) {
+        mobileNav.classList.remove('active');
+        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+      }
     }
-  }
-});
+  });
+}
 
 // Loading screen handler
 function handleLoadingScreen() {
@@ -206,57 +228,21 @@ function handleLoadingScreen() {
   }
 }
 
-// Responsive Navigation
-const nav = document.querySelector('nav');
-const menuToggleResponsive = document.createElement('button');
-menuToggleResponsive.classList.add('menu-toggle');
-menuToggleResponsive.innerHTML = '<i class="fas fa-bars"></i>';
-nav.parentNode.insertBefore(menuToggleResponsive, nav);
-
-menuToggleResponsive.addEventListener('click', () => {
-  nav.classList.toggle('active');
-  menuToggleResponsive.innerHTML = nav.classList.contains('active')
-    ? '<i class="fas fa-times"></i>'
-    : '<i class="fas fa-bars"></i>';
-});
-
-// Close menu on link click (for mobile)
-nav.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    if (window.innerWidth <= 768) {
-      nav.classList.remove('active');
-      menuToggleResponsive.innerHTML = '<i class="fas fa-bars"></i>';
-    }
-  });
-});
-
-// Adjust menu on window resize
-window.addEventListener('resize', () => {
-  if (window.innerWidth > 768) {
-    nav.classList.remove('active');
-    menuToggleResponsive.innerHTML = '<i class="fas fa-bars"></i>';
-  }
-});
-
 // Run initialization when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
   // Handle loading screen
   handleLoadingScreen();
-  
-  // Initialize dark mode icon
-  if (darkModeToggle) {
-    const icon = darkModeToggle.querySelector('i');
-    if (document.body.classList.contains('dark-mode')) {
-      icon.classList.remove('fa-moon');
-      icon.classList.add('fa-sun');
-    } else {
-      icon.classList.remove('fa-sun');
-      icon.classList.add('fa-moon');
-    }
-  }
-  
+
+  // Initialize dark mode
+  initializeDarkMode();
+
+  // Initialize menu navigation
+
+  initializeMenuNavigation();
+
   // Check screen size on load
   if (window.innerWidth > 768) {
+    const mobileNav = document.getElementById('mobileNav');
     if (mobileNav) {
       mobileNav.classList.remove('active');
     }
