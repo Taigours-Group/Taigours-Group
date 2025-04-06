@@ -78,7 +78,7 @@ function createProductCards(productsToShow = products, container = document.getE
       const title = this.getAttribute('data-title');
       const image = this.getAttribute('data-image');
       const price = this.getAttribute('data-price');
-      const url = `${window.location.origin}/product-detail.html?id=${this.getAttribute('data-id')}`;
+      const url = `${window.location.origin}/Taigours-Group/product-detail.html?id=${this.getAttribute('data-id')}`;
 
       const shareText = `Check out this product: ${title} for NRP. ${price}`;
       const thumbnailHtml = `
