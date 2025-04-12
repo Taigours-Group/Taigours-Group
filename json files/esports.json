@@ -2,13 +2,13 @@
   "tournaments": [
     {
       "id": 1,
-      "title": "Free Fire Competition #1",
+      "title": "Free Fire Test Match",
       "game": "Free Fire",
       "map": "Bermuda",
-      "event": "END",
-      "date": "April 05, 2025",
+      "event": "Started",
+      "date": "April 12, 2025",
       "time": "1:00 PM",
-      "prize": "NRS 400/-",
+      "prize": "FREE",
       "image": "attached_assets/esports/Free Fire Competition 1.png",
       "youtube": "https://www.youtube.com/live/0Lu4CWa0dqs?si=bSt6idUulWjygAYl",
       "facebook": "https://www.facebook.com/profile.php?id=61572485841102"
