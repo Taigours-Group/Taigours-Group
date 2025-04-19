@@ -17,13 +17,13 @@
       "id": 2,
       "title": "Free Fire Competition #2",
       "game": "Free Fire",
-      "map": "Purgatory",
-      "event": "Comming Soon",
-      "date": "Comming Soon",
-      "time": "--:-- PM",
-      "prize": "NRS --/-",
+      "map": "Bermuda",
+      "event": "Free Fire",
+      "date": "April 25, 2025",
+      "time": "04:00 PM",
+      "prize": "NRS 1000/-",
       "image": "attached_assets/esports/Free Fire Competition 2.png",
-      "youtube": "https://www.youtube.com/watch?v=example2",
+      "youtube": "https://youtube.com/live/J61WGIQUj9U?feature=share",
       "facebook": "https://www.facebook.com/example2"
     },
 
@@ -46,34 +46,10 @@
     "freefire": [
       {
         "rank": 1,
-        "team": "ͲᎬᎪᎷ HER☯S ꔪ",
-        "kill": "8",
-        "wins": "1",
-        "points": "100"
-      },
-
-      {
-        "rank": 2,
         "team": "Solo rusher",
         "kill": "15",
         "wins": "0",
-        "points": "200"
-      },
-
-      {
-        "rank": 3,
-        "team": "Boys Nepal",
-        "kill": "1",
-        "wins": "0",
-        "points": "15"
-      },
-
-      {
-        "rank": 4,
-        "team": "Lanka Pati",
-        "kill": "3",
-        "wins": "0",
-        "points": "60"
+        "points": "--"
       }
     ],
     "pubg": [
