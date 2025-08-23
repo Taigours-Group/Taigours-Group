@@ -1,220 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="attached_assets/logo1.png" type="image/x-icon">
-  <title>Taigours Group of Organizations - A Legacy of Excellence</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taigours Group - A Legacy of Excellence, A Future of Growth</title>
+    <meta name="description" content="Taigours Group – Innovating in E-Sports, Cloud Services, Web Development, and Mithila Art. Empowering businesses, creators, and communities with excellence and creativity.">
+    <meta name="keywords" content="Taigours Group, E-Sports, Cloud Services, Cultural Arts, Taigours">
+    <meta name="author" content="Taigours Group">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title Icon -->
+    <link rel="icon" href="assets/logo1.png" type="image/png">
 </head>
-
 <body>
-  
-  <!-- Loading Screen -->
-  <div id="loading-screen">
+    <!-- Loading Page -->
+     <div class="loading-content">
+        <hr>
     <div class="loading-container">
-      <div class="cinematic-effect"></div>
-      <div class="logo-container">
-        <img src="attached_assets/logo1.png" alt="Taigour's Group Logo">
-      </div>
-      <div class="loading-bar">
-        <div class="loading-progress"></div>
-      </div>
-      <div class="loading-text">Taigours Group of Organizations</div>
-      <audio id="loading-sound" src="sound/cinematic-intro.mp3" preload="auto"></audio>
-      <script>
-        window.addEventListener('load', function() {
-          var audio = document.getElementById('loading-sound');
-          audio.play().catch(function(error) {
-            console.log('Audio playback failed:', error);
-          });
-        });
-      </script>
+            <img src="assets/logo1.png" alt="">
+        <p class="loading-text">Loading...</p>
     </div>
-  </div>
-
-  <header>
-    <div class="container">
-      <div class="logo">
-        <img src="attached_assets/logo1.png" alt="Taigour's Group Logo">
-      </div>
-      <div class="nav-buttons">
-        <button id="darkModeToggle" class="mode-toggle"><i class="fas fa-moon"></i></button>
-      </div>
-      <nav id="mobileNav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#companies">Our Companies</a></li>
-          <li><a href="#leadership">Leadership</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
     </div>
-  </header>
-
-  <section id="home" class="hero">
-    <div class="container">
-      <h1>Welcome to Taigour's Group</h1>
-      <p>A Legacy of Excellence, A Future of Growth</p>
-      <a href="#companies" class="btn">Discover Our Companies</a>
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Taigour's Group of Organizations</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>Taigours Group of Organizations is a forward-thinking business conglomerate with a strong presence in multiple industries, including technology, e-sports, arts & crafts, fashion, and digital solutions. Built on a foundation of innovation, excellence, and strategic growth, we are committed to delivering high-quality products and services that shape the future.</p>
-          <p>Our journey began with a bold vision: to create a diverse business ecosystem that blends culture, creativity, and technology. Today, we continue to push boundaries, exploring new opportunities and expanding our impact across various sectors.</p>
-          <h3>Our Philosophy</h3>
-          <p>At Taigours, we believe in:</p>
-          <ul>
-            <li><h4>Sustainable Growth</h4> – Expanding responsibly while maintaining our core values.</li>
-            <li><h4>Innovation & Creativity </h4>– Bringing unique and futuristic solutions to the market.</li>
-            <li><h4>Community Impact</h4>– Empowering individuals and businesses through our ventures.</li>
-          </ul>
-          <p>With the strength and spirit of a tiger, we embrace challenges, adapt to change, and seize opportunities with unwavering determination.
-
-            <h4>Join us on our journey to redefine industries and build a legacy of excellence.</h4></p>
-        </div>
-        <div class="about-image">
-          <img src="attached_assets/logo1.png" alt="Taigour's Group">
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="companies" class="companies">
-    <div class="container">
-      <h2>Our Companies</h2>
-      
-      <div class="companies-grid">
-        <div class="company-card">
-          <div class="company-icon"><img src="attached_assets/esports.png" alt=""><i class="fas fa-gamepad"></i></div>
-          <h3>Taigour's E-Sports</h3>
-          <p>Organizing Free Fire and PUBG tournaments with professional scheduling and management.</p>
-          <a href="https://taigours-group.github.io/Taigours-Esports/" class="btn btn-sm">Visit Company</a>
-        </div>
-        <div class="company-card">
-          <div class="company-icon"><img src="attached_assets/music.png" alt=""><i class="fas fa-music"></i></div>
-          <h3>Taigour's Music</h3>
-          <p>Publishing and promoting original music content from talented artists worldwide.</p>
-          <a href="#" class="btn btn-sm">Starting Soon</a>
-        </div>
-        <div class="company-card">
-          <div class="company-icon"><img src="attached_assets/store.png" alt=""><i class="fas fa-shopping-cart"></i></div>
-          <h3>Mithila Chitrakala <br>Store</h3>
-          <p>Online marketplace offering exclusive merchandise and premium products.</p>
-          <a href="#" class="btn btn-sm">Starting Soon</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="leadership" class="leadership">
-    <div class="container">
-      <h2>Leadership</h2>
-      <div class="leadership-content">
-        <div class="leader-card">
-          <div class="leader-image">
-            <img src="attached_assets/Aaditya Pathak.png" alt="">
-          </div>
-          <h3>Aaditya Pathak</h3>
-          <p>Chief Executive Officer</p>
-        </div>
-        <div class="leader-card">
-          <div class="leader-image">
-            <img src="attached_assets/Alex Taigour.png" alt="">
-          </div>
-          <h3>Alex Taigour</h3>
-          <p>Founder & Chairman</p>
-        </div>
-        <div class="leader-card">
-          <div class="leader-image">
-            <img src="attached_assets/Krishna.png" alt="">
-          </div>
-          <h3>Krishna Taigour</h3>
-          <p>Chief Financial Officer</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <div class="contact-content">
-        <div class="contact-info">
-          <div class="contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Taigours Group of Organizations, Dhanusa, JanakpurDham-13, Nepal</p>
-          </div>
-          <div class="contact-item">
-            <i class="fa-brands fa-whatsapp"></i>
-            <p><a href="https://wa.me/9779864088891?text=Hello%2C%20I%20am%20interested%20in%20learning%20more%20about%20Taigours%20Group%20and%20joining%20your%20organization." target="_blank">+977 986-4088891</a></p>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo1.png" alt="Taigours Group Logo" class="logo-img">
+                <span class="logo-text">TAIGOURS GROUP</span>
             </div>
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <p>taigoursgrouppvtltd@gmail.com</p>
-          </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#branches" class="nav-link" data-section="branches">Branches</a>
+                <a href="#leadership" class="nav-link" data-section="leadership">Leadership</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-        <div class="contact-form">
-          <form id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="text" placeholder="Subject">
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img src="attached_assets/logo1.png" alt="Taigour's Group Logo">
-          <p>A Legacy of Excellence, A Future of Growth</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="particles-container" id="particles"></div>
+            <div class="gradient-overlay"></div>
         </div>
-        <div class="footer-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#companies">Our Companies</a></li>
-            <li><a href="#leadership">Leadership</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+        
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="assets/logo1.png" alt="Taigours Group" class="hero-logo-img">
+            </div>
+            <h1 class="hero-title">TAIGOURS GROUP</h1>
+            <p class="hero-subtitle">A Legacy of Excellence, A Future of Growth</p>
+            <p class="hero-description">Leading innovation in E-Sports, Cloud Services, and Cultural Arts with premium solutions for the modern world.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('about')">
+                    <span>Discover More</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-envelope"></i>
+                </button>
+            </div>
         </div>
-        <div class="footer-branches">
-          <h3>Our Companies</h3>
-          <ul>
-            <li><a href="esports.html">Taigour's E-Sports</a></li>
-            <li><a href="#">Taigour's Music</a></li>
-            <li><a href="#">Taigour's Store</a></li>
-          </ul>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
         </div>
-        <div class="footer-social">
-          <h3>Follow Us</h3>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/TaigoursGroup" class="fb" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="insta" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2023 Taigours Group of Organizations. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Taigours Group</h2>
+                <p class="section-subtitle">Building tomorrow's solutions today</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To transform industries by delivering breakthrough solutions in technology, business, culture, and lifestyle. We aim to empower individuals, support creativity, and drive sustainable growth in every venture we create.</p>
+                </div>
+                
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To become a world-class multi-industry organization recognized for innovation, trust, and excellence. We envision TGO as a hub where technology, creativity, and entrepreneurship converge to shape a smarter, more connected future.</p>
+                </div>
+                
+                <div class="about-card" id="about-card1" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Our Values</h3>
+                    
+                    <p><ul>
+
+                       <li><b>Excellence –</b> We strive to deliver the highest quality in everything we do.</li>
+
+                       <li><b>Integrity –</b> We build trust through honesty and strong ethical principles.</li>
+                       
+                       <li><b>Innovation –</b> We embrace creativity and forward-thinking to stay ahead.</li>
+                       
+                       <li><b>Collaboration –</b> We grow stronger by working together with communities and partners.</li>
+
+                       <li><b>Customer-Centricity –</b> We put our clients and communities at the heart of every solution.</li>
+                    </l>
+                   </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section id="branches" class="section branches-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Branches</h2>
+                <p class="section-subtitle">Diverse expertise across multiple industries</p>
+            </div>
+            
+            <div class="branches-grid">
+                <div class="branch-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-icon">
+                            <img src="assets/Taigours E-sports bg.png" alt="Taigours E-sports bg.png">
+                        </div>
+                        <h3>Taigours E-Sports</h3>
+                        <p>Taigours E-Sports is the competitive gaming division of Taigours Group of Organizations, organizing tournaments, leagues, and community events. We empower gamers to showcase their talent, connect globally, and thrive in the e-sports ecosystem.</p>
+                        <div class="card-features">
+                            <span class="feature-tag">E-Sports</span>
+                            <span class="feature-tag">Gaming Tournaments</span>
+                            <span class="feature-tag">Competitive Play</span>
+                            <span class="feature-tag">Global Community</span>
+                        </div>
+                    <div class="card-btn" title="Visit Taigours E-Sports">
+                        <a class="visit-btn" href='https://taigours-group.github.io/Taigours-Esports/' target="_blank">
+                            <span>Visit</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+
+                <div class="branch-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-icon">
+                            <img src="assets/Zyphora Cloud Logo.png" alt="Zyphora_Cloud.png">
+                        </div>
+                        <h3>Zyphora Cloud</h3>
+                        <p>Zyphora Cloud, powered by Taigours Group of Organizations, delivers next-generation cloud solutions with speed, security, and scalability. From data storage to web hosting, we provide reliable and innovative services for businesses and developers.</p>
+                        <div class="card-features">
+                            <span class="feature-tag">Cloud Infrastructure</span>
+                            <span class="feature-tag">Secure Cloud</span>
+                            <span class="feature-tag">Data Storage</span>
+                            <span class="feature-tag">Web Hosting</span>
+                            <span class="feature-tag">Scalable Solutions</span>
+                        </div>
+                    <div class="card-btn">
+                        <a class="visit-btn" href="Oops.html" target="_blank">
+                            <span>Visit</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+              </div>
+
+                
+                <div class="branch-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-icon">
+                            <img src="assets/store/logo.png" alt="">
+                        </div>
+                        <h3>Mithila Chitrakala</h3>
+                        <p>Preserving and promoting traditional Mithila art, including Madhubani, handicrafts, and other diverse art styles, through modern digital platforms and exhibitions supporting artists and helping them grow with us.</p>
+                        <div class="card-features">
+                            <span class="feature-tag">Mithila Art</span>
+                            <span class="feature-tag">Madhubani Painting</span>
+                            <span class="feature-tag">Handicrafts</span>
+                            <span class="feature-tag">Cultural Heritage</span>
+                            <span class="feature-tag">Traditional & Modern Fusion</span>
+                            <span class="feature-tag">Canvas & Clothing Design</span>
+                        </div>
+                    <div class="card-btn">
+                        <a class="visit-btn" href="Oops.html" target="_blank">
+                            <span>Visit</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                
+                <div class="branch-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-icon">
+                            <img src="assets/Taigour WebForge.png" alt="Taigours WebForge">
+                        </div>
+                        <h3>Taigours WebForge</h3>
+                        <p>Taigours WebForge is the creative coding arm of Taigours Group of Organizations, specializing in building cutting-edge websites, applications, and digital platforms. Our team of developers work across multiple programming languages and technologies to deliver tailored solutions for businesses, startups, and enterprises worldwide.</p>
+                        <div class="card-features">
+                            <span class="feature-tag">Web Development</span>
+                            <span class="feature-tag">App Development</span>
+                            <span class="feature-tag">Coding Hub</span>
+                            <span class="feature-tag">Multi-Language Dev</span>
+                            <span class="feature-tag">Digital Solutions</span>
+                            <span class="feature-tag">Enterprise Software</span>
+                        </div>
+                     <div class="card-btn">
+                         <a class="visit-btn" href="Oops.html" target="_blank">
+                             <span>Visit</span>
+                             <i class="fas fa-arrow-right"></i>
+                         </a>
+                     </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="section leadership-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Leadership Team</h2>
+                <p class="section-subtitle">Visionary leaders driving our success</p>
+            </div>
+            
+            <div class="leadership-grid">
+                <div class="leader-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="leader-image">
+                        <div class="image-placeholder">
+                            <img src="assets/Aaditya Pathak.png" alt="">
+                        </div>
+                        <div class="leader-overlay">
+                            <div class="leader-bio">
+                                <p>Focused on driving growth, strategic expansion, and innovative leadership.</p>
+                                <div class="leader-social">
+                                    <a href="https://www.facebook.com/aaditya.pathak.946179" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/aaditya_pathak_9.4/" class="social-link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3>Aaditya Pathak</h3>
+                        <p class="leader-title">Chief Executive Officer</p>
+                    </div>
+                </div>
+                
+                <div class="leader-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="leader-image">
+                        <div class="image-placeholder">
+                            <img src="assets/Alex Taigour.png" alt="">
+                        </div>
+                        <div class="leader-overlay">
+                            <div class="leader-bio">
+                                <p>Focused on vision building, cultural impact, and long-term business excellence.</p>
+                                <div class="leader-social">
+                                    <a href="https://www.instagram.com/alex_taigour" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/alex-taigour" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3>Alex Taigour</h3>
+                        <p class="leader-title">Founder & Chairman</p>
+                    </div>
+                </div>
+                
+                <div class="leader-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="leader-image">
+                        <div class="image-placeholder">
+                            <img src="assets/Krishna.png" alt="">
+                        </div>
+                        <div class="leader-overlay">
+                            <div class="leader-bio">
+                                <p>Focused on financial strategy, resource optimization, and sustainable growth.</p>
+                                <div class="leader-social">
+                                    <a href="https://www.facebook.com/krishna.taigour" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/krishna_taigour" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3>Krishna Taigour</h3>
+                        <p class="leader-title">Chief Financial Officer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to start your journey with us?</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>Dhanusa, Janakpurdham, <br>Nepal</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p><a href="https://api.whatsapp.com/send/?phone=9779766115626&text=Hello" target="_blank">+977 9766115626</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>taigoursgroup@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/taigours-groups-of-organizations" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://x.com/taigoursgroups" class="social-link" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.facebook.com/TaigoursGroup" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" title="Enter Your Name" required>
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" title="Enter Your Email Address" required>
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company (Optional)</label>
+                            <input type="text" id="company" name="company" title="Enter Your Company Name (Optional)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="esports">Taigours E-Sports</option>
+                                <option value="cloud">Zyphora Cloud</option>
+                                <option value="art">Mithila Chitrakala</option>
+                                <option value="WebForge">Taigours WebForge</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="form-error" id="serviceError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" title="Write something here" required></textarea>
+                            <span class="form-error" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full" id="sendMessage">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo.png" alt="Taigours Group" class="footer-logo-img">
+                    <span class="footer-logo-text">TAIGOURS GROUP</span>
+                </div>
+                <marquee behavior="scroll-arrow" direction="left">Taigours Group of Organizations – Innovating across industries with technology, creativity, and excellence. From Web Development to Cloud, E-Sports to Art – Taigours Group is building tomorrow’s solutions today. Empowering businesses, creators, and communities worldwide – Welcome to Taigours Group of Organizations.</marquee>
+                <p class="footer-text">&copy; 2025 Taigours Group. All rights reserved. A Legacy of Excellence, A Future of Growth</p>
+                 <p class="footer-text-2">Web Version: 3.1.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
